@@ -54,9 +54,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MiCo.MiForms.MiFormsComponent">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Mi-Co\Mi-Forms SDK\bin\MiCo.MiForms.MiFormsComponent.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -120,6 +117,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\MiCo.MiForms.MiFormsComponent\MiCo.MiForms.MiFormsComponent.csproj">
+      <Project>{a69b5988-dd7f-4eec-b035-e1767e49823b}</Project>
+      <Name>MiCo.MiForms.MiFormsComponent</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
